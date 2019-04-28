@@ -15,7 +15,7 @@ main() async {
 
     String name = point["properties"]["name"] as String;
     String alias = point["properties"]["aliases"][0] as String;
-    double lat = point["geometry"]["coordinates"][0] as double;
+    double lat = point["geometry"]["coordinates"][1] as double;
     double long = point["geometry"]["coordinates"][0] as double;
 
     for (var beacon in beacons)
@@ -30,5 +30,5 @@ main() async {
       }
     }
   }
- // 
+ //
 }
